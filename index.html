@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Training | Cyber Security</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="background-animation" id="bg-anim"></div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <nav>
+            <div class="logo">Sentry-<span>Academy</span></div>
+            <ul class="nav-links">
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#types">Phishing Types</a></li>
+                <li><a href="#redflags">Red Flags</a></li>
+                <li><a href="#social">Social Engineering</a></li>
+                <li><a href="#examples">Real-World Examples</a></li>
+                <li><a href="#bestpractices">Best Practices</a></li>
+                <li><a href="#quiz">Test Your Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="module-section active-module">
+            <div class="content-wrapper">
+                <h1>Phishing Awareness Training</h1>
+                <p class="subtitle">Protect Yourself and Your Organization from Cyber Threats</p>
+                <div class="hero-image">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="text-content">
+                    <p>Welcome to the Phishing Awareness Training. In today's digital landscape, the human element is often the weakest link in cybersecurity. Phishing is a primary tool for cybercriminals to gain unauthorized access, steal data, and cause financial harm.</p>
+                    <p>This module is designed to equip you with the knowledge and skills to identify, avoid, and report phishing attempts effectively.</p>
+                    <button class="btn-start" onclick="nextSection('types')">Start Training <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="types" class="module-section">
+            <div class="content-wrapper">
+                <h2>Understanding Phishing Types</h2>
+                <div class="grid-container">
+                    <div class="card">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h3>Email Phishing</h3>
+                        <p>The most common form. Mass emails sent to thousands, hoping someone clicks a malicious link or opens an attachment.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Spear Phishing</h3>
+                        <p>A highly targeted attack directed at a specific individual or organization. Attackers often use personal details to gain trust.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-crown"></i>
+                        <h3>Whaling</h3>
+                        <p>Spear phishing aimed at high-profile targets like C-level executives (CEO, CFO, etc.) to steal sensitive corporate data.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-sms"></i>
+                        <h3>Smishing & Vishing</h3>
+                        <p>Phishing via SMS (Smishing) or phone calls (Vishing). Scammers impersonate banks or government agencies over the phone.</p>
+                    </div>
+                </div>
+                <button class="btn-next" onclick="nextSection('redflags')">Next: Spotting Red Flags <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="redflags" class="module-section">
+            <div class="content-wrapper">
+                <h2>How to Recognize Phishing</h2>
+                <div class="info-list">
+                    <div class="list-item">
+                        <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="text">
+                            <h4>Urgency & Threats</h4>
+                            <p>Language like "Act Now!", "Immediate Action Required", or "Account will be suspended" is a classic tactic to make you panic and act without thinking.</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="icon"><i class="fas fa-user-secret"></i></div>
+                        <div class="text">
+                            <h4>Suspicious Sender Address</h4>
+                            <p>The display name might look legitimate, but the actual email address is often slightly misspelled or from an unrelated domain (e.g., support@amazon-security.net).</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="icon"><i class="fas fa-link"></i></div>
+                        <div class="text">
+                            <h4>Mismatched URLs</h4>
+                            <p>Always hover over links before clicking. If the URL shown in the bottom corner doesn't match the text or the expected destination, it's a trap.</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="icon"><i class="fas fa-spell-check"></i></div>
+                        <div class="text">
+                            <h4>Poor Spelling & Grammar</h4>
+                            <p>Professional organizations rarely send emails with blatant spelling errors or awkward phrasing.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-next" onclick="nextSection('social')">Next: Social Engineering <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="social" class="module-section">
+            <div class="content-wrapper">
+                <h2>Social Engineering Tactics</h2>
+                <p>Social engineering is the art of manipulating people into divulging confidential information.</p>
+                <div class="tactics-box">
+                    <div class="tactic">
+                        <h4>Pretexting</h4>
+                        <p>Creating a fabricated scenario (the pretext) to trick a victim into providing information. For example, "I'm from the IT department and I need your password to fix your computer."</p>
+                    </div>
+                    <div class="tactic">
+                        <h4>Baiting</h4>
+                        <p>Promising an item or good to entice victims. It could be a free movie download or a USB drive left in a public place labeled "Executive Salary Updates."</p>
+                    </div>
+                    <div class="tactic">
+                        <h4>Quid Pro Quo</h4>
+                        <p>A "favor for a favor." An attacker might call claiming to be technical support, offering a "quick fix" for a non-existent problem in exchange for login credentials.</p>
+                    </div>
+                </div>
+                <button class="btn-next" onclick="nextSection('examples')">Next: Real-World Examples <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="examples" class="module-section">
+            <div class="content-wrapper">
+                <h2>Real-World Case Studies</h2>
+                <div class="case-study">
+                    <h4>1. The Google Docs Phishing Scam (2017)</h4>
+                    <p>Attackers sent an email that looked like a genuine Google Docs invitation. When users clicked "Open in Docs," they were taken to a real Google sign-in page, but they were actually granting a malicious app (named "Google Docs") access to their entire email account and contacts. It spread to over 1 million users in hours.</p>
+                </div>
+                <div class="case-study">
+                    <h4>2. The FACC Whaling Attack (2016)</h4>
+                    <p>An Austrian aerospace parts manufacturer, FACC, lost about €42 million when an employee in the finance department received an email supposedly from the CEO. The email instructed the employee to transfer money for a "fake" acquisition project. This is a classic example of whaling and social engineering.</p>
+                </div>
+                <div class="case-study">
+                    <h4>3. The COVID-19 Relief Scams (2020)</h4>
+                    <p>During the pandemic, scammers sent millions of emails and texts impersonating government health organizations (like the WHO or CDC) and tax authorities. They promised stimulus checks or health updates to trick people into downloading malware or providing personal social security numbers.</p>
+                </div>
+                <button class="btn-next" onclick="nextSection('bestpractices')">Next: Best Practices <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="bestpractices" class="module-section">
+            <div class="content-wrapper">
+                <h2>Best Practices to Stay Safe</h2>
+                <ul class="best-practices-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Think Before You Click:</strong> Never click on links or download attachments from unknown or suspicious sources.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Verify the Source:</strong> If you receive an unexpected request for information, call the person or company using a known, trusted phone number.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Use Multi-Factor Authentication (MFA):</strong> Even if an attacker gets your password, MFA provides an extra layer of protection.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Keep Software Updated:</strong> Regular updates ensure you have the latest security patches.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Report Suspicious Emails:</strong> Use your organization's reporting tool or contact the IT security team immediately.</li>
+                </ul>
+                <button class="btn-next" onclick="nextSection('quiz')">Take the Phishing Quiz <i class="fas fa-vial"></i></button>
+            </div>
+        </section>
+
+        <section id="quiz" class="module-section">
+            <div class="content-wrapper">
+                <div class="quiz-header">
+                    <h2>Advanced Assessment</h2>
+                    <div id="quiz-stats">Question: <span id="q-count">1</span>/30 | Score: <span id="current-score">0</span></div>
+                </div>
+                <div id="quiz-container">
+                    <div id="question-area">
+                        <p id="question-text">Loading question...</p>
+                        <div id="options-container"></div>
+                    </div>
+                    <div id="quiz-feedback" class="hidden">
+                        <p id="feedback-message"></p>
+                        <button class="btn-next" onclick="loadNextQuestion()">Next Question</button>
+                    </div>
+                    <div id="quiz-results" class="hidden">
+                        <div class="certificate-card" id="certificate">
+                            <i class="fas fa-certificate cert-seal"></i>
+                            <h2>Certificate of Achievement</h2>
+                            <p class="award">This award is presented to</p>
+                            <h3 style="font-size: 2rem; margin: 1rem 0;">Cyber Guardian</h3>
+                            <p>For successfully completing the</p>
+                            <h4>Advanced Phishing Awareness Training</h4>
+                            <p id="cert-score" style="margin-top: 1rem; font-weight: bold;"></p>
+                            <div style="margin-top: 2rem; font-size: 0.8rem; border-top: 1px solid #ddd; padding-top: 1rem;">
+                                Issued by Sentry-Academy | 2026
+                            </div>
+                        </div>
+                        <p id="score-display"></p>
+                        <button class="btn-restart" onclick="restartQuiz()">Restart Module</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sentry-Academy | Phishing Awareness Training Module</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
