@@ -18,7 +18,7 @@ This project is part of the CodeAlpha Cyber Security Internship. It is an intera
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/CodeAlpha_PhishingAwareness.git
+   git clone https://github.com/abdulrhmansaad456eg/CodeAlpha_PhishingAwareness.git
    ```
 2. Open `index.html` in any modern web browser.
 
