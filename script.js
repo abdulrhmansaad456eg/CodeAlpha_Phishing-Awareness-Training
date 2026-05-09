@@ -1,4 +1,4 @@
-// Navigation & UI Logic
+
 const sections = ['intro', 'types', 'redflags', 'social', 'examples', 'bestpractices', 'quiz'];
 
 function updateProgressBar(sectionId) {
@@ -38,7 +38,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// 30 High-Quality Quiz Questions
+
 const quizData = [
     {
         question: "An email from 'billing@netflix-updates.com' claims your payment failed and offers a 50% discount if you update within 10 minutes. What is the biggest red flag?",
